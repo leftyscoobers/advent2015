@@ -95,13 +95,6 @@ def string_is_nice_again(string_to_check):
 nice2 = []
 for t in raw_input:
     nice2.append(string_is_nice_again(t))
-    # nice2.append(skip_match(t)) # 431
-    # nice2.append(pair_repeat(t)) # 129
 
 print(f"With new rules, there are {sum(nice2)} nice strings.")
 
-
-test = ['xyxy', 'aabcdefgaa', 'aaa']
-for t in test:
-    ok = pair_repeat(t)
-    print(ok)
