@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import re
+import sys
 from pathlib import Path
 from typing import List
 
@@ -60,8 +61,7 @@ def part2(lines: List[str]) -> int:
 
 
 if __name__ == "__main__":
-    # Adjust the path to wherever you saved your puzzle input.
-    INPUT_PATH = Path("08_input.txt")
+    INPUT_PATH = Path(sys.argv[1])
     raw_lines = INPUT_PATH.read_text().splitlines()
 
     print("Part 1 answer :", part1(raw_lines))
